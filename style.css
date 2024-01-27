@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+li {
+    padding-left: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 190vh;
+    background-color: hsl(30, 54%, 90%);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    max-width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    padding: clamp(0px, 2%, 25px);
+    border-radius: 15px;
+}
+
+h1 {
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    padding: 18px 0;
+}
+
+.header-part p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.preparation-main-part {
+    background-color: hsl(330, 100%, 98%);
+    font-family: 'Outfit', sans-serif;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.preparation-main-part h3 {
+    color: hsl(333, 36%, 29%);
+    padding-bottom: 10px;
+}
+
+.preparation-list-main-part {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.preparation-list-main-part li::marker {
+    color: hsl(333, 36%, 29%);
+}
+
+.ingredients-main-part h2 {
+    color: hsl(15, 37%, 34%);
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    padding: 20px 0 10px 0;
+}
+
+.ingredients-list-main-part {
+    padding: 0 0 20px 20px;
+    line-height: 1.8;
+    font-family: 'Outfit', sans-serif;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.ingredients-list-main-part li::marker {
+    color: hsl(15, 37%, 34%);
+}
+
+.instructions-main-part h2 {
+    color: hsl(15, 37%, 34%);
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.instructions-list-main-part {
+    padding: 0 0 20px 20px;
+    line-height: 1.8;
+    font-family: 'Outfit', sans-serif;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.instructions-list-main-part li::marker {
+    color: hsl(15, 37%, 34%);
+    font-weight: 600;
+}
+
+.nutrition-main-part h2 {
+    color: hsl(15, 37%, 34%);
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.nutrition-main-part p {
+    padding: 20px 0 20px 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.table-main-part {
+    border-collapse: collapse;
+    font-family: 'Outfit', sans-serif;
+    width: 100%;
+
+}
+
+.table-main-part td {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    line-height: 1.8;
+}
+
+td:nth-child(even) {
+    color: hsl(15, 37%, 34%);
+    font-weight: 600;
+}
+
+@media (max-width: 375px) {
+    .main-container {
+        border-radius: 0;
+        padding: 0;
+    }
+
+    img {
+        border-radius: 0;
+    }
+}
